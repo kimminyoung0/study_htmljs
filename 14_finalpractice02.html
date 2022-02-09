@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3의 배수 찾기</title>
+  <style>
+    body{
+      text-align:center;
+    }
+    p{
+      color:red;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>3의 배수 찾기</h1>
+  <script>
+    var num = prompt("숫자를 입력하세요.");
+    var cnt;
+    if (num === null){
+      document.write("값을 입력하지 않았습니다.");
+    }
+    else
+      for(i = 1; i*3 <= num; i++) {
+        document.write(i*3 + ", ");
+        cnt = i;
+      }
+      document.write("<br>")
+        
+    document.write("<p>"+ num + "까지의 3의 배수의 개수 :" + cnt+ "</p>");
+      
+      
+  </script>
+  
+</body>
+</html>
